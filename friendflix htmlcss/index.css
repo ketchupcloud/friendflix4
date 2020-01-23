@@ -1,0 +1,56 @@
+nav{
+	display: block;
+	background: grey;	
+}
+
+nav h1{
+	display: inline;
+	text-align: left;
+	color: orange;
+	font-family: 'Rubik Mono One', sans-serif;
+	
+}
+
+#bloco2{
+	display:flex;
+	background: orange;
+	
+}
+.divmain{
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.img_bloco2{
+	display:block;
+	width: 40%;
+	height: auto;
+	/* filter: contrast(110%) brightness(105%); */
+}
+
+.main{
+	font-family: 'Montserrat', sans-serif;
+	color: grey;
+	
+}
+
+.navbutton.hover{
+	box-shadow: 0 14px 28px #900099;
+}
+
+.navbuttons{
+	display: inline;
+	float:right;
+}
+
+.navbutton{
+	font-family: 'Montserrat', sans-serif;
+	color: orange;
+	text-decoration: none;
+	margin: 1em;
+}
+
+body{
+	background: #111111;
+}
+

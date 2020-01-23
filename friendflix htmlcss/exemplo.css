@@ -1,0 +1,74 @@
+.container{
+	/*display: grid;
+	grid-template-columns: repeat(2,20%);
+	grid-template-rows: repeat(2,20%);*/
+	width: 100%;
+	height: 100%;
+	justify-items: center;
+	/*align-items: center;*/
+	font-family: 'Montserrat', sans-serif;
+	color: orange;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*place-items: center;
+	backgroud-color: purple;
+	positon: relative;
+	font-family: 'Permanent Marker', cursive;*/
+}
+.todas{
+	background-color: grey;
+	border: solid 2px green;
+	width: 80%;
+	height: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2px;
+	transition: all 2s ease-out;
+}
+.todas:hover{
+	height: 85%;
+	width: 85%;
+	box-shadow: 0 14px 28px #666666;
+	color:red;
+	background: url(https://www.montink.com.br/image/cache/data/camisas/camiseta-do-not-touch-me-4-5a6ba9225c4c4-estampa-306-680x969.png);	
+	border-radius: 50px;
+	position: relative;
+}
+
+#serie-1{
+	background: url("http://multiversitystatic.s3.amazonaws.com/uploads/2014/05/buffy2.jpg");
+}
+
+#serie-2{
+	background: #12234480;
+}
+
+#serie-3{
+	background: url("capa1.jpg");
+}
+
+#serie-4{
+	background: rgba(12,123,123,1);
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: #900090;
+}
+
+@media (max-width: 600px) {
+	.container{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	.todas{
+		margin-top: 2vh;
+	}
+}
+
