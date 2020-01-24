@@ -5,11 +5,15 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Serie;
 
 class User extends Authenticatable
 {
     use Notifiable;
-
+	
+	public function series_assistidas(){
+		return $this->hasMany('App\Serie'); /* retorna usuarios que assistem tal serie */
+	}
     /**
      * The attributes that are mass assignable.
      *

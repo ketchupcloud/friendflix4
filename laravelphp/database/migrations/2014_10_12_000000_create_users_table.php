@@ -23,7 +23,9 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
     }
-
+	
+	
+	
     /**
      * Reverse the migrations.
      *
@@ -34,3 +36,14 @@ class CreateUsersTable extends Migration
         Schema::dropIfExists('users');
     }
 }
+
+/*COMO SALVAR NO LOCALHOST/PHPMYADMIN
+use App\user;
+$user = new user()
+$user->name="joao"
+$user->password=1234
+$user->email="bla@bla.com"
+$user->save() 
+$var = Entidade::find(PK)
+Entidade::destroy(PK)
+$*/

@@ -16,3 +16,10 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('listaUsuarios', 'friendFlixController@listaUsuarios');
+Route::get('userId', 'friendFlixController@listaUsuarios');
+Route::post('createUser', 'friendFlixController@createUser');
+Route::put('atualizaUsuarios/{id}', 'friendFlixController@atualizaUsuarios');
+Route::delete('deletaUsuario', 'friendFlixController@deletaUsuario');
+
